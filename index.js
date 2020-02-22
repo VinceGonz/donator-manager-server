@@ -29,9 +29,7 @@ app.use(morgan('dev')); // ? Can use 'dev' / 'common' as parameter
 app.use(helmet());
 
 // * Setup Cors Middleware (Cross-Origin Resource Sharing)
-app.use(cors({
-  origin: 'http://localhost:3000',
-}));
+app.use(cors());
   
 
 // * Setup Routes
