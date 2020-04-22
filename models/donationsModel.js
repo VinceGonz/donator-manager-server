@@ -3,7 +3,7 @@ const db = require('../config/database');
 
 
 const getAllDonators = () => {
-    const getAllDonatorsQuery = `SELECT * FROM tbl_donations`;
+    const getAllDonatorsQuery = `SELECT * FROM tbl_donations ORDER BY created_at ASC`;
 
     return new Promise(async (resolve, reject) => {
         try{
