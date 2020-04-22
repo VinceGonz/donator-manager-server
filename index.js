@@ -51,8 +51,7 @@ app.use(notFound);
 // * Setup Error handler middleware
 app.use(errorHandler);
 
-const port = process.env.PORT || 8080;
-
+const port = process.env.PORT || 5000; // during deployment change to 8080
 
 app.listen(port, async () => {
   try{
